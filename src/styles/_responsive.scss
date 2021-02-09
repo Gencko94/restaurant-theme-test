@@ -1,0 +1,28 @@
+$sm-min: 600px;
+$md-min: 960px;
+$lg-min: 1280px;
+$max-width: 1440px;
+@mixin xs {
+  @media screen and (max-width: $xs-max) {
+    @content;
+  }
+}
+@mixin sm {
+  @media screen and(min-width: $sm-min) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and(min-width: $md-min) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and(min-width: $lg-min) {
+    @content;
+  }
+}
+@mixin maxWidth {
+  max-width: 1440px;
+  margin: auto;
+}

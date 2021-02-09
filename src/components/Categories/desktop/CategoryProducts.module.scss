@@ -1,0 +1,61 @@
+@import "../../../styles/variables";
+.container {
+  // box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  padding: 2em 0;
+}
+.categoryTitleContainer {
+  text-align: center;
+  background-color: $main-color;
+  padding: 1em;
+  margin-bottom: 1em;
+  .categoryTitle {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: $text-color;
+  }
+}
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: 1em 0.5em;
+  margin-bottom: 5em;
+}
+.product {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  display: block;
+}
+.productImageContainer {
+  position: relative;
+  padding-bottom: 100% * 150/266;
+}
+
+.productTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  .productTitle {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .productPriceContainer {
+    padding: 0.7em;
+    font-weight: 600;
+    background-color: $main-color;
+    color: $text-color;
+    font-size: 0.8em;
+    border-radius: 20px;
+  }
+}
+.productDescriptionContainer {
+  padding: 0.5em;
+  .productDescription {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+  }
+}

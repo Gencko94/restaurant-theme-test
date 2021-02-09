@@ -1,0 +1,53 @@
+.profileIconContainer {
+  position: relative;
+  color: #fff;
+
+  .profileDropDownContainer {
+    background-color: #fff;
+    color: var(--main-color);
+    font-weight: 600;
+    position: absolute;
+    top: 120%;
+    overflow: hidden;
+    right: -100%;
+    left: -100%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.1);
+    z-index: 2;
+    .menuItem {
+      padding: 1em 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 1em;
+      transition: color 100ms ease;
+      &:hover {
+        background-color: var(--main-color);
+        color: var(--text-color);
+      }
+      p {
+        margin: 0 0.5em;
+      }
+    }
+    .account {
+      padding: 1em 1.5em;
+      font-size: 0.5em;
+      border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+      .accountName {
+        margin-bottom: 0.25em;
+      }
+      .accountEmail {
+        font-weight: normal;
+      }
+    }
+  }
+}
+.iconContainer {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

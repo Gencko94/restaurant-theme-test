@@ -1,0 +1,22 @@
+.container {
+  margin-bottom: 1em;
+}
+.categoryNameContainer {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 10px;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  justify-content: center;
+  .categoryName {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  span {
+    margin: 0 1em;
+  }
+}
+.productsContainer {
+  padding: 1em 0;
+}

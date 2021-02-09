@@ -1,0 +1,98 @@
+.imageContainer {
+  position: relative;
+  padding-bottom: 100% * 150/266;
+}
+.productNameContainer {
+  padding: 0.5em 1em;
+  .productName {
+    font-weight: 800;
+    font-size: 2em;
+  }
+}
+.productPriceContainer {
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 1em;
+  // font-size: 0.5em;
+  .priceText {
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .productPrice {
+    font-size: 0.9em;
+    margin: 0 1em;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 0.5em;
+  }
+}
+.servingContainer {
+  padding: 0.5em 1em;
+  .servingBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    color: #da1f05;
+    font-size: 0.9em;
+  }
+  .servingText {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .servingIcon {
+    margin: 0 1em;
+  }
+}
+.productDescriptionContainer {
+  padding: 0.5em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
+}
+.specialInstructionsContainer {
+  padding: 0.5em 1em;
+  .specialInstructionsText {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1em;
+  }
+  .specialInstructions {
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+}
+.addToCartContainer {
+  padding: 1.2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  .quantityContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    .quantity {
+      margin: 0 0.5em;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 7px;
+      padding: 0.5em 1em;
+    }
+  }
+  .addButton {
+    padding: 0.7em 1em;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1em;
+  }
+}

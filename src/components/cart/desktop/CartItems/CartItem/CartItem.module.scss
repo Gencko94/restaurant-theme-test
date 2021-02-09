@@ -1,0 +1,46 @@
+@import "../../../../../styles/variables";
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.3fr 0.3fr;
+  gap: 1rem;
+  padding: 0.5em;
+}
+.imageContainer {
+  position: relative;
+  padding-bottom: 100% * 210/210;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.productName {
+  font-weight: $f-bold;
+}
+.specialInstructions {
+  font-weight: $f-light;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em 0;
+}
+.quantityContainer {
+  @include flexCenter;
+  justify-content: flex-start;
+  padding: 0.5em 0;
+  .quantity {
+    margin: 0 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    padding: 0.2em 0.7em;
+  }
+}
+.removeBtn {
+  background-color: #b72b2b;
+  color: #fff;
+  padding: 0.5em;
+  margin-left: auto;
+  text-transform: uppercase;
+  width: 100px;
+}
+.priceContainer {
+  text-align: center;
+  font-weight: $f-semibold;
+}

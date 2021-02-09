@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+
+.footerContainer {
+  background-color: $main-color;
+}
+.footerLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  .footerLogo {
+    width: 150px;
+    height: 150px;
+  }
+}
+.footerLinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  flex-wrap: wrap;
+  color: $text-color;
+  .footerLink {
+    margin: 0 1em;
+  }
+}
+.socialLinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  .socialLink {
+    margin: 0 1em;
+  }
+}

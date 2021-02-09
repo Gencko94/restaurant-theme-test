@@ -1,0 +1,14 @@
+.container {
+  padding: 0.5em;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  right: 0;
+
+  justify-content: justify-between;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}

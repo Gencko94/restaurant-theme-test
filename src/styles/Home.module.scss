@@ -1,0 +1,9 @@
+@import "./variables";
+@import "./responsive";
+.contentContainer {
+  @include md {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+}

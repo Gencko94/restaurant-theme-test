@@ -1,0 +1,12 @@
+@import "../../../styles/responsive";
+.container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 2em;
+  @include md {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+}

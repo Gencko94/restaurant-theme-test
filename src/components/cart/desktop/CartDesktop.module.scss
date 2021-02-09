@@ -1,0 +1,11 @@
+@import "../../../styles/responsive";
+.container {
+  @include maxWidth;
+  padding: 0.5em;
+  padding: 2em;
+}
+.cartContainer {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 1em;
+}

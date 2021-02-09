@@ -1,0 +1,108 @@
+@import "../../../styles/variables";
+.backDrop {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.modalContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.closeButton {
+  background-color: #fff;
+  padding: 0.25em;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productImageContainer {
+  position: relative;
+  padding-bottom: 100% * 100/210;
+}
+
+.productTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  .productTitle {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .productPriceContainer {
+    padding: 0.7em;
+    background-color: $main-color;
+    color: $text-color;
+    font-size: 0.8em;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+}
+.productDescriptionContainer {
+  padding: 0.5em;
+  .productDescription {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+  }
+}
+.orderContainer {
+  padding: 0.5em;
+  .specialInstructionsTitle {
+    font-size: 1.2em;
+    color: rgb(136, 133, 133);
+    margin-bottom: 1em;
+  }
+  .textArea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+.addToCartContainer {
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .addButton {
+    padding: 0.5em;
+    background-color: $main-color;
+    color: $text-color;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .qtyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quantity {
+    margin: 0 1em;
+    padding: 0.25em 1em;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+}

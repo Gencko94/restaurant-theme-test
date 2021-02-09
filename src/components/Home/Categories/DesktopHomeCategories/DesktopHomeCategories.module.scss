@@ -1,0 +1,49 @@
+@import "../../../../styles/variables";
+.container {
+  margin: 0;
+}
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+
+  h1 {
+    font-weight: 600;
+    font-size: 2em;
+  }
+}
+.contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2em;
+  column-gap: 1em;
+
+  .categoryCard {
+    display: block;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    transition: all 250ms;
+    &:hover {
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+    .imageContainer {
+      position: relative;
+      padding-bottom: 100% * 150/266;
+    }
+    .cardContent {
+      padding: 0.5em;
+      text-align: center;
+      color: #2c0a51;
+      .categoryName {
+        @include card-product-name;
+      }
+      .categoryCount {
+        font-size: 0.8em;
+        font-weight: 600;
+        color: gray;
+      }
+    }
+  }
+}

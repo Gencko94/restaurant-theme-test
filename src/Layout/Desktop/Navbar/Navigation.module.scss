@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  font-size: 0.9em;
+}
+.item {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    text-shadow: $glow-shadow;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+.container {
+  box-shadow: 0 15px 15px -3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  align-self: flex-start;
+  position: sticky;
+  top: 1em;
+}
+.titleContainer {
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .title {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+.categoryItemContainer {
+  text-align: center;
+  .categoryItem {
+    display: block;
+    padding: 1em;
+    transition: all 250ms;
+  }
+}
